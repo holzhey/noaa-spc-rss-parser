@@ -23,9 +23,9 @@ struct Item {
 }
 
 pub struct Warning {
-    title: String,
-    content: String,
-    link: String,
+    pub title: String,
+    pub content: String,
+    pub link: String,
 }
 
 impl Display for Warning {
