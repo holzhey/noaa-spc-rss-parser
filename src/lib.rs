@@ -54,7 +54,7 @@ fn get_warning(item: Item) -> Warning {
 
     let start = item.description.find("<pre>").unwrap_or(0);
     let finish = item.description.find("</pre>").unwrap_or(desc.len());
-    dbg!(start, finish);
+
     if start != 0 && finish != desc.len() {
         desc = &item.description[start..finish];
     }
